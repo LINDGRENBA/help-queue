@@ -1,5 +1,35 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Ticket Queue
+
+#### Authors:
+
+Sara Kane, JohnNils Olson, Brittany Lindgren
+
+This project is a help ticket queue exercise in React for Epicodus and can be used as a guideline for setting up a React app, 09/09/2020
+
+## Errors / Bugs
+| Message | Cause | Fix |
+|---------|-------|-----|
+|  TypeError: Cannot read property 'setState' of undefined  |  The handleClick function in TicketControl has lost its context because we removed the arrow notation and `this` becomes undefined because Javascript is in `strict` mode  |  Bind our function so that it remembers what `this` should be - use `bind()` or use fat arrow notation in the handleClick function  |
+|   |   |   |
+
+
+## Missing Words in Lesson
+
+Should be functional component(s)
+
+## Import UUID / GUID
+
+`import { v4 } from 'uuid';`
+
+then set the ID property where it needs to be
+
+ex: 
+`const ticket = {};`
+`ticket.id = v4()`
+
+
 ## Available Scripts
 
 In the project directory, you can run:
